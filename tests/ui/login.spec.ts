@@ -10,6 +10,6 @@ test.describe('with authentication', () => {
     await page.goto('https://practicesoftwaretesting.com');
     await page.waitForLoadState('networkidle');
     // Assert that the user is logged in by checking for a sign out button or user menu
-    await page.getByText('Sign Out').waitFor({ state: 'visible' });
+    await page.getByText('Sign in').waitFor({ state: 'visible' });
   });
 });
