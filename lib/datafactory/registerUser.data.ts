@@ -1,9 +1,4 @@
-import {
-  APIRequest,
-  APIRequestContext,
-  APIResponse,
-  request,
-} from '@playwright/test';
+import { APIRequestContext, APIResponse, request } from '@playwright/test';
 
 export default async function registerNewUser(
   email: string = '',
