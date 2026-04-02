@@ -1,9 +1,9 @@
 export const testData = {
   users: {
     validUser: {
-      username: 'testuser',
-      password: 'password123',
-      email: 'test@example.com'
+      username: process.env.TEST_USER_NAME || 'testuser',
+      password: process.env.TEST_USER_PASS || 'password123',
+      email: process.env.TEST_USER_EMAIL || 'test@example.com'
     },
     invalidUser: {
       username: 'invalid',

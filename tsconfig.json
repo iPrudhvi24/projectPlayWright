@@ -1,13 +1,21 @@
 {
     "compilerOptions": {
-        "module": "ESNext",
-        "moduleResolution": "Bundler",
+        "module": "node20",
+        "moduleResolution": "node16",
         "target": "ES2024",
         "jsx": "react-jsx",
         "strictNullChecks": true,
         "strictFunctionTypes": true,
         "strict": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "types": ["node"],
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+    },
+    "ts-node": {
+        "esm": true,
+        "experimentalEsm": true
     },
     "exclude": [
         "node_modules",

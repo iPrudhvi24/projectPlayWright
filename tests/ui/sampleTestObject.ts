@@ -1,4 +1,4 @@
-import { UITestInterface } from '../utils/utils';
+import { UITestInterface } from '../utils/test.type';
 import { Browser, Page, chromium, expect } from '@playwright/test';
 
 export const sampleTestsObject: UITestInterface = {

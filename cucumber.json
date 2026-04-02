@@ -1,0 +1,11 @@
+ {
+  "default": {
+    "paths": ["features/*.feature"],
+    "require": ["tests/ui/login.feature.ts"],
+    "publishQuite": true,
+    "formatOptions": {
+      "snippetInterface": "async-await"
+    },
+    "requireModule": ["ts-node/register"]
+  }
+}

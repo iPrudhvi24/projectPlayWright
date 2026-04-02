@@ -85,31 +85,29 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.58.2",
     "workers": 4,
     "webServer": null
   },
   "suites": [
     {
-      "title": "ui/login.spec.ts",
-      "file": "ui/login.spec.ts",
+      "title": "ui/order.spec.ts",
+      "file": "ui/order.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "with authentication",
-          "file": "ui/login.spec.ts",
-          "line": 3,
+          "title": "place an order for the product",
+          "file": "ui/order.spec.ts",
+          "line": 7,
           "column": 6,
           "specs": [
             {
-              "title": "check the authentication",
+              "title": "book a product",
               "ok": true,
-              "tags": [
-                "regression"
-              ],
+              "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
@@ -119,25 +117,85 @@
                   "projectName": "chrome",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 11997,
+                      "duration": 19601,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "new user created successfully, with the userName : random@practicesoftwaretesting.comUser13 and password : Prudhvi@1224\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-19T12:00:29.817Z",
+                      "steps": [
+                        {
+                          "title": "login to the application",
+                          "duration": 6746
+                        },
+                        {
+                          "title": "go to the home screen",
+                          "duration": 319
+                        },
+                        {
+                          "title": "search for the item",
+                          "duration": 77
+                        },
+                        {
+                          "title": "get the product from the filtered products list",
+                          "duration": 1821
+                        },
+                        {
+                          "title": "page should go to the products page",
+                          "duration": 2
+                        },
+                        {
+                          "title": "click on add to cart",
+                          "duration": 1309
+                        },
+                        {
+                          "title": "assertion",
+                          "duration": 2878
+                        },
+                        {
+                          "title": "go to kart",
+                          "duration": 2325
+                        },
+                        {
+                          "title": "perform login action",
+                          "duration": 1881
+                        },
+                        {
+                          "title": "Fill your delivery address...",
+                          "duration": 50
+                        },
+                        {
+                          "title": "Making payment",
+                          "duration": 1889
+                        },
+                        {
+                          "title": "Terminate the page and the instances",
+                          "duration": 11
+                        }
+                      ],
+                      "startTime": "2026-04-01T11:15:15.000Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/prudhvi/WebstormProjects/automation/test-results/ui-order-place-an-order-for-the-product-book-a-product-chrome/video.webm"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "25217b8bb4316ea872c4-9316d477119d27023f7f",
-              "file": "ui/login.spec.ts",
-              "line": 6,
+              "id": "0c94fbe3cb30537b73f6-75b94e1efbd08b718754",
+              "file": "ui/order.spec.ts",
+              "line": 8,
               "column": 7
             }
           ]
@@ -147,8 +205,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-19T12:00:29.288Z",
-    "duration": 13598.839,
+    "startTime": "2026-04-01T11:15:13.798Z",
+    "duration": 21577.673000000417,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

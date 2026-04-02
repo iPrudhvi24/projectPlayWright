@@ -20,15 +20,15 @@ export class BasePage {
   }
 
   async clickElement(selector: string): Promise<void> {
-    await this.page.click(selector);
+    await this.page.locator(selector).click();
   }
 
   async fillInput(selector: string, text: string): Promise<void> {
-    await this.page.fill(selector, text);
+    await this.page.locator(selector).fill(text);
   }
 
   async getText(selector: string): Promise<string> {
-    return await this.page.textContent(selector) || '';
+    return (await this.page.textContent(selector)) ?? '';
   }
 
   async isElementVisible(selector: string): Promise<boolean> {

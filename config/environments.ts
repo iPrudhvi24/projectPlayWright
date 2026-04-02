@@ -15,5 +15,13 @@ export const environments = {
 
 export const getCurrentEnvironment = () => {
   const env = process.env.TEST_ENV || 'dev';
-  return environments[env as keyof typeof environments];
+  const envConfig = environments[env as keyof typeof environments];
+  
+  if (!envConfig) {
+    throw new Error(
+      `Invalid TEST_ENV: "${env}". Allowed values are: ${Object.keys(environments).join(', ')}`
+    );
+  }
+  
+  return envConfig;
 };

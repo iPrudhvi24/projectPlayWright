@@ -1,6 +1,6 @@
-import { UITestInterface } from '../utils/utils';
 import { Page } from '@playwright/test';
-import { HomePage } from '../../pages/homePage';
+import { UITestInterface } from '../utils/test.type';
+import { HomePage } from '../../lib/pages/homePage';
 
 export const sampleUITestsObject: UITestInterface = {
   beforeEach: async ({ page }: { page: Page }) => {

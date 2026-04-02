@@ -1,6 +1,6 @@
-import { APITestInterface } from '../utils/utils';
+import { APITestInterface } from '../utils/test.type';
 import { APIRequestContext, expect } from '@playwright/test';
-import { UserApi } from '../../apis/userApi';
+import { UserApi } from '../../lib/pages/api/userApi';
 
 export const sampleAPITestsObject: APITestInterface = {
   beforeEach: async ({ request }: { request: APIRequestContext }) => {
