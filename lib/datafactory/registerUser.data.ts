@@ -4,6 +4,8 @@ export default async function registerNewUser(
   email: string = '',
   password: string = '',
 ): Promise<void> {
+  if (typeof email !== 'string' && typeof password !== 'string')
+    throw new Error('please share a valid username and password.');
   // Creating context to perform api calls
   const reqCtx: APIRequestContext = await request.newContext();
 
