@@ -30,7 +30,7 @@ export default defineConfig({
   use: {
     viewport: null,
 
-    headless: false,
+    headless: true,
 
     testIdAttribute: 'data-test',
 
