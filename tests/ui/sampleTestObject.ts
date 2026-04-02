@@ -10,14 +10,6 @@ export const sampleTestsObject: UITestInterface = {
     // Cleanup code that runs after each test
     console.log('Cleaning up after each test');
   },
-  // beforeAll: async ({ page }: { page: Page }) => {
-  //   // Setup code that runs once before all tests
-  //   console.log('Running beforeAll');
-  // },
-  // afterAll: async ({ page }: { page: Page }) => {
-  //   // Cleanup code that runs once after all tests
-  //   console.log('Running afterAll');
-  // },
   tests: {
     '@smoke has title': async ({ page }: { page: Page }) => {
       await page.goto('https://playwright.dev/');

@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "setup",
         "name": "setup",
@@ -36,7 +36,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "chrome",
         "name": "chrome",
@@ -52,7 +52,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "api",
         "name": "api",
@@ -85,118 +85,153 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.58.2",
     "workers": 4,
     "webServer": null
   },
   "suites": [
     {
-      "title": "ui/order.spec.ts",
-      "file": "ui/order.spec.ts",
+      "title": "api/apiTests.spec.ts",
+      "file": "api/apiTests.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "place an order for the product",
-          "file": "ui/order.spec.ts",
-          "line": 7,
-          "column": 6,
+          "title": "API Test Suite",
+          "file": "utils/test.type.ts",
+          "line": 26,
+          "column": 9,
           "specs": [
             {
-              "title": "book a product",
+              "title": "@smoke get users",
               "ok": true,
-              "tags": [],
+              "tags": [
+                "smoke"
+              ],
               "tests": [
                 {
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chrome",
-                  "projectName": "chrome",
+                  "projectId": "api",
+                  "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 19601,
+                      "duration": 181,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "new user created successfully, with the userName : random@practicesoftwaretesting.comUser13 and password : Prudhvi@1224\n"
+                          "text": "Setting up before each API test\n"
+                        },
+                        {
+                          "text": "Cleaning up after each API test\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "steps": [
-                        {
-                          "title": "login to the application",
-                          "duration": 6746
-                        },
-                        {
-                          "title": "go to the home screen",
-                          "duration": 319
-                        },
-                        {
-                          "title": "search for the item",
-                          "duration": 77
-                        },
-                        {
-                          "title": "get the product from the filtered products list",
-                          "duration": 1821
-                        },
-                        {
-                          "title": "page should go to the products page",
-                          "duration": 2
-                        },
-                        {
-                          "title": "click on add to cart",
-                          "duration": 1309
-                        },
-                        {
-                          "title": "assertion",
-                          "duration": 2878
-                        },
-                        {
-                          "title": "go to kart",
-                          "duration": 2325
-                        },
-                        {
-                          "title": "perform login action",
-                          "duration": 1881
-                        },
-                        {
-                          "title": "Fill your delivery address...",
-                          "duration": 50
-                        },
-                        {
-                          "title": "Making payment",
-                          "duration": 1889
-                        },
-                        {
-                          "title": "Terminate the page and the instances",
-                          "duration": 11
-                        }
-                      ],
-                      "startTime": "2026-04-01T11:15:15.000Z",
+                      "startTime": "2026-04-02T15:51:37.011Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/prudhvi/WebstormProjects/automation/test-results/ui-order-place-an-order-for-the-product-book-a-product-chrome/video.webm"
-                        }
-                      ]
+                      "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "0c94fbe3cb30537b73f6-75b94e1efbd08b718754",
-              "file": "ui/order.spec.ts",
-              "line": 8,
-              "column": 7
+              "id": "57941ab4b3bd0635c46c-86ffd6e0a1f4cb523eee",
+              "file": "utils/test.type.ts",
+              "line": 31,
+              "column": 73
+            },
+            {
+              "title": "@smoke get user by id",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 189,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Setting up before each API test\n"
+                        },
+                        {
+                          "text": "Cleaning up after each API test\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-02T15:51:37.011Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "57941ab4b3bd0635c46c-0ed33c18e3d5b04c83f1",
+              "file": "utils/test.type.ts",
+              "line": 31,
+              "column": 73
+            },
+            {
+              "title": "@smoke create user",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 894,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Setting up before each API test\n"
+                        },
+                        {
+                          "text": "Cleaning up after each API test\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-02T15:51:37.017Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "57941ab4b3bd0635c46c-4bbe774ca4074510a3a5",
+              "file": "utils/test.type.ts",
+              "line": 31,
+              "column": 73
             }
           ]
         }
@@ -205,9 +240,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-01T11:15:13.798Z",
-    "duration": 21577.673000000417,
-    "expected": 1,
+    "startTime": "2026-04-02T15:51:36.290Z",
+    "duration": 1656.8909999999998,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
