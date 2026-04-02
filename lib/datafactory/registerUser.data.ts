@@ -18,7 +18,7 @@ export default async function registerNewUser(
         last_name: 'C',
         dob: '1997-03-24',
         phone: '0000000000',
-        email: email + user,
+        email: user + email,
         password: password,
         address: {
           street: 'Kondapur',
