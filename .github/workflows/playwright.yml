@@ -19,7 +19,7 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run Playwright tests
         run: |
-          if [[ "${{ github.ref_name }}" == "main"]]; then
+          if [[ "${{ github.ref_name }}" == "main"]] then
             TEST_ENV=prod npx playwright test --project chrome
           else
             TEST_ENV=dev npx playwright test --project chrome
