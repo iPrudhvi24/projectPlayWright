@@ -1,5 +1,5 @@
 import { UITestInterface } from '../utils/test.type';
-import { Browser, Page, chromium, expect } from '@playwright/test';
+import { Page, expect } from '@playwright/test';
 
 export const sampleTestsObject: UITestInterface = {
   beforeEach: async ({ page }: { page: Page }) => {

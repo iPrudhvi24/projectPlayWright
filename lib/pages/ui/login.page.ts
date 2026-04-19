@@ -22,6 +22,7 @@ export class LoginPage extends BasePage {
     await this.email.pressSequentially(email);
     await this.password.pressSequentially(password);
     await this.loginBtn.click();
+    await this.page.waitForLoadState('networkidle');
   }
 
   async goto(): Promise<void> {

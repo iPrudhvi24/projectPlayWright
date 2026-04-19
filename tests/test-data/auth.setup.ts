@@ -9,7 +9,8 @@ test('authentication_cookies', async ({
 }) => {
   console.log('execution is started as expected');
 
-  const email: string = process.env.TEST_USER_EMAIL || 'admin@practicesoftwaretesting.com';
+  const email: string =
+    process.env.TEST_USER_EMAIL || 'admin@practicesoftwaretesting.com';
   const password: string = process.env.TEST_USER_PASSWORD || 'welcome01';
   const adminAuthFileLoc: string = 'auth/admin.json';
 

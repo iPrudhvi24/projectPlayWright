@@ -1,11 +1,9 @@
 import { APIRequestContext, APIResponse, request } from '@playwright/test';
 
-export default async function registerNewUser(
+async function registerNewUser(
   email: string = '',
   password: string = '',
-): Promise<void> {
-  if (typeof email !== 'string' && typeof password !== 'string')
-    throw new Error('please share a valid username and password.');
+): Promise<{ [name: string]: string }> {
   // Creating context to perform api calls
   const reqCtx: APIRequestContext = await request.newContext();
 
@@ -34,13 +32,22 @@ export default async function registerNewUser(
   );
 
   // validating the response is 200 - 299 or failed
-  if (!response.ok())
+  if (!response.ok()) {
+    console.error(response.body());
     throw new Error(
       'user creation is failed please try again after sometime 🙏',
     );
+  }
 
   // If no error printing the new User name and password
   console.log(
-    `new user created successfully, with the userName : ${email + user} and password : ${password}`,
+    `new user created successfully, with the userName : ${user + email} and password : ${password}`,
   );
+
+  return {
+    email: user + email,
+    password,
+  };
 }
+
+export default registerNewUser;

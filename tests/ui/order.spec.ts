@@ -1,7 +1,7 @@
 import test, { expect, Page } from '@playwright/test';
-import { LoginPage } from '../../lib/pages/ui/login.page';
-import registerNewUser from '../../lib/datafactory/registerUser.data';
-import { randomState } from '../../lib/helpers/states.helper';
+import { LoginPage } from '@pages/ui/login.page';
+import registerNewUser from '@dataFactory/registerUser.data';
+import { randomState } from '@helpers/states.helper';
 
 test.use({ headless: true });
 test.describe('place an order for the product', () => {
@@ -10,7 +10,7 @@ test.describe('place an order for the product', () => {
       const email: string = 'random@practicesoftwaretesting.com';
       const password: string = 'Prudhvi@1224';
 
-      await registerNewUser(email, password);
+      // await registerNewUser(email, password);
 
       const loginPage: LoginPage = new LoginPage(page);
 

@@ -10,18 +10,14 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 1
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "projects": [
       {
         "outputDir": "/Users/prudhvi/WebstormProjects/automation/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "metadata": {},
         "id": "setup",
         "name": "setup",
         "testDir": "/Users/prudhvi/WebstormProjects/automation/tests",
@@ -35,9 +31,7 @@
         "outputDir": "/Users/prudhvi/WebstormProjects/automation/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "metadata": {},
         "id": "chrome",
         "name": "chrome",
         "testDir": "/Users/prudhvi/WebstormProjects/automation/tests",
@@ -51,9 +45,7 @@
         "outputDir": "/Users/prudhvi/WebstormProjects/automation/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "metadata": {},
         "id": "api",
         "name": "api",
         "testDir": "/Users/prudhvi/WebstormProjects/automation/tests",
@@ -85,129 +77,22 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.58.2",
     "workers": 4,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "ui/order.spec.ts",
-      "file": "ui/order.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "place an order for the product",
-          "file": "ui/order.spec.ts",
-          "line": 7,
-          "column": 6,
-          "specs": [
-            {
-              "title": "book a product",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chrome",
-                  "projectName": "chrome",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 18329,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "new user created successfully, with the userName : random@practicesoftwaretesting.comUser430 and password : Prudhvi@1224\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "login to the application",
-                          "duration": 4852
-                        },
-                        {
-                          "title": "go to the home screen",
-                          "duration": 468
-                        },
-                        {
-                          "title": "search for the item",
-                          "duration": 81
-                        },
-                        {
-                          "title": "get the product from the filtered products list",
-                          "duration": 1315
-                        },
-                        {
-                          "title": "page should go to the products page",
-                          "duration": 2
-                        },
-                        {
-                          "title": "click on add to cart",
-                          "duration": 1324
-                        },
-                        {
-                          "title": "assertion",
-                          "duration": 2870
-                        },
-                        {
-                          "title": "go to kart",
-                          "duration": 2814
-                        },
-                        {
-                          "title": "perform login action",
-                          "duration": 2382
-                        },
-                        {
-                          "title": "Fill your delivery address...",
-                          "duration": 50
-                        },
-                        {
-                          "title": "Making payment",
-                          "duration": 1892
-                        },
-                        {
-                          "title": "Terminate the page and the instances",
-                          "duration": 10
-                        }
-                      ],
-                      "startTime": "2026-04-02T18:02:04.573Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/prudhvi/WebstormProjects/automation/test-results/ui-order-place-an-order-for-the-product-book-a-product-chrome/video.webm"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "0c94fbe3cb30537b73f6-75b94e1efbd08b718754",
-              "file": "ui/order.spec.ts",
-              "line": 8,
-              "column": 7
-            }
-          ]
-        }
-      ]
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
     }
   ],
-  "errors": [],
   "stats": {
-    "startTime": "2026-04-02T18:02:03.472Z",
-    "duration": 20118.388999999966,
-    "expected": 1,
+    "startTime": "2026-04-19T10:37:23.878Z",
+    "duration": 7.882000000000062,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
