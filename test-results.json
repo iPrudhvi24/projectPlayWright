@@ -10,14 +10,18 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 2
+    },
     "preserveOutput": "always",
     "projects": [
       {
         "outputDir": "/Users/prudhvi/WebstormProjects/automation/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 2
+        },
         "id": "setup",
         "name": "setup",
         "testDir": "/Users/prudhvi/WebstormProjects/automation/tests",
@@ -31,7 +35,9 @@
         "outputDir": "/Users/prudhvi/WebstormProjects/automation/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 2
+        },
         "id": "chrome",
         "name": "chrome",
         "testDir": "/Users/prudhvi/WebstormProjects/automation/tests",
@@ -45,7 +51,9 @@
         "outputDir": "/Users/prudhvi/WebstormProjects/automation/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 2
+        },
         "id": "api",
         "name": "api",
         "testDir": "/Users/prudhvi/WebstormProjects/automation/tests",
@@ -82,17 +90,129 @@
     "workers": 4,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
-      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+      "title": "ui/uiTests.spec.ts",
+      "file": "ui/uiTests.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "UI Test Suite",
+          "file": "utils/test.type.ts",
+          "line": 33,
+          "column": 8,
+          "specs": [
+            {
+              "title": "@smoke has title",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3460,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Setting up before each test\n"
+                        },
+                        {
+                          "text": "Cleaning up after each test\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-20T17:05:36.005Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/prudhvi/WebstormProjects/automation/test-results/ui-uiTests-UI-Test-Suite-smoke-has-title-chrome/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d77864263e9828a4eace-c3b9787ceb79733d9d3f",
+              "file": "utils/test.type.ts",
+              "line": 40,
+              "column": 11
+            },
+            {
+              "title": "@smoke @regression get started link",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4611,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Setting up before each test\n"
+                        },
+                        {
+                          "text": "Cleaning up after each test\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-20T17:05:36.005Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/prudhvi/WebstormProjects/automation/test-results/ui-uiTests-UI-Test-Suite-smoke-regression-get-started-link-chrome/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d77864263e9828a4eace-2f9b195e2d4ae4ade99a",
+              "file": "utils/test.type.ts",
+              "line": 40,
+              "column": 11
+            }
+          ]
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2026-04-19T10:37:23.878Z",
-    "duration": 7.882000000000062,
-    "expected": 0,
+    "startTime": "2026-04-20T17:05:35.136Z",
+    "duration": 8370.972,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
