@@ -1,4 +1,4 @@
-import { execute } from '../utils/test.type';
+import executeSuite from '../utils/test.type';
 import { sampleTestsObject } from './sampleTestObject';
 
-execute('UI Test Suite', sampleTestsObject);
+executeSuite('UI Test Suite', sampleTestsObject);
