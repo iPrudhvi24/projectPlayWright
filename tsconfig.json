@@ -1,7 +1,9 @@
 {
     "compilerOptions": {
         "types": ["node"],
-        "noEmit": true,
+        "noEmit": false,
+        "outDir": "./dist",
+        "rootDir": ".",
         "paths": {
             "@dataFactory/*" : ["./lib/datafactory/*"],
             "@helpers/*" : ["./lib/helpers/*"],
