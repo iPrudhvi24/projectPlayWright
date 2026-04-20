@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "types": ["node"],
+        "noEmit": true,
         "paths": {
             "@dataFactory/*" : ["./lib/datafactory/*"],
             "@helpers/*" : ["./lib/helpers/*"],
@@ -8,5 +9,5 @@
             "@pages/*" : ["./lib/pages/*"]
         }
 
-    },
+    }
 }
